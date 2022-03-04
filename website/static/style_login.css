@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"); */
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Add padding to container elements */
+
+.container {
+  padding: 20px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(60%, -50%);
+  border-radius: 10px;
+  background: white;
+}
+
+/* Full-width input fields */
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="text"],
+input[type="password"]:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: #E6E6FA;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+}
+
+img {
+  height: 60%;
+  width: 60%;
+  margin-top: 9%;
+  border-right: 2px solid rgba(125, 125, 125, 0.2);
+}
+
+.h1 {
+  padding-bottom: 40px;
+}
+
+.clearfix {
+  display: flex;
+}
+
+p {
+  font-size: 12px;
+  padding-top: 1px;
+  margin-left: 75px;
+}
+
+.logo {
+  padding-right: 59%;
+    font-family: "Architects Daughter", cursive;
+  font-size: 27px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #3a3e59;
+}
+
+.error {
+  color: red;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
