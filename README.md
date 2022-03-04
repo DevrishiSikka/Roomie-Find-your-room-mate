@@ -1,1 +1,4 @@
-"# Roomie-Find-your-room-mate" 
+
+# Roomie
+
+Find your room-mate with your given preference
