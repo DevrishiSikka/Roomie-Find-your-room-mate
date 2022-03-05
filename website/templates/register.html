@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='style_register.css') }}" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Roomie | Register</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Roomie | Registration</title>
+      </head>
+      <body>
+          <div class="nav">
+      <nav>
+            <a href="{{url_for('views.homepage')}}" class="logo">ROOMIE</a>
+          <a href="{{url_for('views.find_roomie')}}">Find a roomie</a>
+          <a href={{url_for('views.about')}}>About</a>
+          <a href={{url_for('auth.register')}}>Sign-up</a>
+          <a href="{{url_for('auth.login')}}" >Sign-in</a>
+          {% if user.is_authenticated %}
+            <a href="{{url_for('auth.logout')}}" class="last">Logout</a>
+          {% endif %}
+      </nav>
+  </div>
+      <div class="image">
+        <img src="{{ url_for('static',filename='img/registration_illustration.png') }}" alt="image" class="animate__animated animate__rotateIn">
+        </div>
+        <form method="post">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <label for="email"><b>Username</b></label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Username"
+              required
+            />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+
+            <label for="email"><b>Phone Number</b></label>
+            <br />
+            <input
+              type="phone"
+              name="phone"
+              placeholder="Enter contact number"
+              required />
+
+            <p class="terms">
+              By creating an account you agree to our
+              <a href="#" class="terms"><b>Terms & Privacy</b></a>.
+            </p>
+
+            <div class="clearfix">
+              <button type="submit" class="btn">Sign Up</button>
+            </div>
+                    <p class="error_message"> {{ confirmation }}</p>
+
+          </div>
+        </form>
+          </a>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       <link rel="stylesheet" href="{{url_for('static',filename='style_dashboard.css')}}">
+<!--  <link rel="stylesheet" href="style_homepage.css">-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Roomie | Register</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <title>Roomie | Login</title>
+      </head>
+      <body>
+<div class="nav">
+                <nav>
+               <a href="#" class="logo">ROOMIE</a>
+               <a href={{url_for('views.about')}}>About</a>
+               <a href={{url_for('auth.register')}}>Sign-up</a>
+            </nav>
+            </div>
+          </a>
+        </div>
+       <div class="para">
+        <h1>Additional Information</h1>
+
+      </div>
+
+      <div class="forms">
+        <form method="post">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" class="fname" name="f_name" required><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" class="lname" name="l_name" required>
+          <label for="lname">Address:</label><br>
+          <input type="text" id="lname" class="addr" name="addr" required>
+          <label for="lname">City:</label><br>
+          <input type="text" id="lname" class="city"  name="city" required>
+          <label for="lname">State:</label><br>
+          <input type="text" id="lname" class="state" name="state"required>
+          <label for="lname">Zip Code:</label><br>
+          <input type="text" id="lname" class="zip" name="zip" required>
+          <label for="lname">Country:</label><br>
+          <div class="country_drop">
+          <input id="myInput" type="text" name="myCountry" autocomplete="off">
+          </div>
+          <label for="lname">College Name:</label><br>
+          <div class="college_drop">
+          <input id="college_name" type="text" name="myCountry" autocomplete="off">
+          </div>
+          <label for="lname">Course:</label><br>
+         <div class="college_drop">
+          <input id="course_name" type="text" name="myCountry" autocomplete="off">
+          </div>
+          <label for="lname">Year Of Admission:</label><br>
+          <input type="text" id="lname" class="year" name="year" required>
+            <h1 class="middle_title">About Yourself</h1>
+            <p >( Please enter different hobbies so that we can serve you better! )</p>
+            <div class="skill">
+              <label for="lname">Hobbie 1:</label>
+              <br>
+              <input type="text" id="skills_one" name="h1" required autocomplete="off">
+            </div>
+            <div class="skill">
+              <label for="lname">Hobbie 2:</label>
+              <br>
+              <input type="text" id="skills_two" name="h2" required autocomplete="off">
+            </div>
+            <div class="skill">
+              <label for="lname">Hobbie 3:</label>
+              <br>
+              <input type="text" id="skills_three" name="h3" required autocomplete="off">
+            </div>
+            <div class="skill">
+              <label for="lname">Hobbie 4:</label>
+              <br>
+              <input type="text" id="skills_four" name="h4" required autocomplete="off">
+            </div>
+            <div class="skill">
+              <label for="lname">Hobbie 5:</label>
+              <br>
+              <input type="text" id="skills_five" name="h5" required autocomplete="off">
+            </div>
+            <label for="lname" class="bio_text">Add a cool bio so that people can know you better:</label><br>
+         <textarea id="biography" name="bio" rows="4" cols="50">
+        </textarea>
+
+          <input type="submit" value="Sign up" class="sub">
+        </form>
+       </div>
+       <script src="{{url_for('static',filename='country_auto.js')}}"></script>
+       <script src="{{url_for('static',filename='college_auto.js')}}"></script>
+       <script src="{{url_for('static',filename='course_auto.js')}}"></script>
+       <script src="{{url_for('static',filename='skills_1.js')}}"></script>
+       <script src="{{url_for('static',filename='skills_2.js')}}"></script>
+       <script src="{{url_for('static',filename='skills_3.js')}}"></script>
+       <script src="{{url_for('static',filename='skills_4.js')}}"></script>
+       <script src="{{url_for('static',filename='skills_5.js')}}"></script>
+
+      </body>
+    </html>
+  </body>
+</html>

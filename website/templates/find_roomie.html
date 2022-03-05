@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='find_roomie.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Find A Roomie</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Roomie-Finder</title>
+      </head>
+      <body>
+        <div class="nav">
+                <nav>
+               <a href="{{url_for('views.homepage')}}" class="logo">ROOMIE</a>
+               <a class="about" href={{url_for('views.about')}}>About</a>
+                  {% if user.is_authenticated %}
+            <a href="{{url_for('auth.logout')}}" class="last">Logout</a>
+          {% endif %}
+            </nav>
+
+        </div>
+        <div>
+
+          {% for i in suggested_data %}
+            <div class="cont">
+              <h1 class="display">{{ i[0] }}</h1>
+              <p class="para-2"> {{ i[1] }} </p>
+              <p class="para-3">Hobbies: {{ i[2]|join(", ") }}</p>
+              {% set num =   range(1, 13)|random %}
+              {% if num == 1 %}
+                <img  src={{url_for('static',filename='pfp/1.jpg')}}>
+              {%elif num == 2%}
+              <img  src={{url_for('static',filename='pfp/2.jpg')}}>
+              {%elif num == 3%}
+              <img  src={{url_for('static',filename='pfp/3.jpg')}}>
+              {%elif num == 4%}
+              <img  src={{url_for('static',filename='pfp/5.jpg')}}>
+              {%elif num == 5%}
+              <img  src={{url_for('static',filename='pfp/6.jpg')}}>
+              {%elif num == 6%}
+              <img  src={{url_for('static',filename='pfp/7.jpg')}}>
+              {%elif num == 7%}
+              <img  src={{url_for('static',filename='pfp/8.jpg')}}>
+              {%elif num == 8%}
+              <img  src={{url_for('static',filename='pfp/9.jpg')}}>
+              {%elif num == 9%}
+              <img  src={{url_for('static',filename='pfp/10.jpg')}}>
+              {%elif num == 10%}
+              <img  src={{url_for('static',filename='pfp/11.jpg')}}>
+              {%elif num == 11%}
+              <img  src={{url_for('static',filename='pfp/12.jpg')}}>
+              {%elif num == 12%}
+              <img  src={{url_for('static',filename='pfp/13.jpg')}}>
+              {%elif num == 13%}
+              <img  src={{url_for('static',filename='pfp/14.jpg')}}>
+              {% endif %}
+            </div>
+        </div>
+          {% endfor %}
+      </body>
+    </html>
+  </body>
+</html>
