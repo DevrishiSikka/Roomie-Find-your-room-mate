@@ -13,5 +13,7 @@ Working Link for the website:  https://www.getroomie.tech/
 
 **Server:** Python, Flask framework, SQLite database
 
+**Cloud Service Provider** Linode
+
 
 
