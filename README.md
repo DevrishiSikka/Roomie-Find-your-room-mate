@@ -1,6 +1,6 @@
 ![Website Main webpage](https://github.com/ojasaklechayt/Roomie-Find-your-room-mate/blob/main/website/Website%20Main%20Page.png?raw=true)
 
-# Roomie
+# 🤝 Roomie
 
 Find the perfect room-mate that you want
 
@@ -10,7 +10,7 @@ Find the perfect room-mate that you want
 - Youtube Explaination Video:  https://youtu.be/dIUp01eJkA0
 
 
-## Tech Stack
+## 💻 Tech Stack 
 
 - **Client:** HTML,CSS, JavaScript
 
