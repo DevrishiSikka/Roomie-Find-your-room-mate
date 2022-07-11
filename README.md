@@ -1,19 +1,22 @@
+![Website Main webpage](https://github.com/ojasaklechayt/Roomie-Find-your-room-mate/blob/main/website/Website%20Main%20Page.png?raw=true)
 
-# Roomie
+# 🤝 Roomie
 
 Find the perfect room-mate that you want
 
 
-Working Link for the website:  https://www.getroomie.tech/
+- Working Link for the website:  https://www.getroomie.tech/
+
+- Youtube Explaination Video:  https://youtu.be/dIUp01eJkA0
 
 
-## Tech Stack
+## 💻 Tech Stack
 
-**Client:** HTML,CSS, JavaScript, Jinja2
+- **Client:** HTML,CSS, JavaScript, Jinja2
 
-**Server:** Python, Flask framework, SQLite database
+- **Server:** Python, Flask framework, SQLite database
 
-**Cloud Service Provider** Linode
+- **Cloud Service Provider:** Linode
 
 
 
