@@ -16,7 +16,7 @@ Find the perfect room-mate that you want
 
 - **Server:** Python, Flask framework, SQLite database
 
-- **Cloud Service Provider** Linode
+- **Cloud Service Provider:** Linode
 
 
 
